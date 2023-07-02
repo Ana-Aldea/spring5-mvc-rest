@@ -4,16 +4,14 @@ import guru.springfamework.repositories.CategoryRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by jt on 9/24/17.
- */
+
 @Component
 public class Bootstrap implements CommandLineRunner{
 
     private CategoryRepository categoryRepository;
 
-    public Bootstrap(CategoryRepository categoryRespository) {
-        this.categoryRepository = categoryRespository;
+    public Bootstrap(CategoryRepository categoryRepository) {
+        this.categoryRepository = categoryRepository;
     }
 
     @Override
